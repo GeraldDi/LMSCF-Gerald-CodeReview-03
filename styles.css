@@ -1,0 +1,16 @@
+.backg{
+	background-image: url("img/traffic.jpg");
+	margin: 0 auto;
+}
+footer{
+	background-color: black;
+	color: white;
+}
+header{
+	background-color:#fff3f3;
+	
+}
+#grey{
+	background-color: grey;
+	text-align: center;
+}
