@@ -1,3 +1,6 @@
+#container{
+	
+}
 .backg{
 	background-image: url("img/traffic.jpg");
 	margin: 0 auto;
@@ -13,4 +16,7 @@ header{
 #grey{
 	background-color: grey;
 	text-align: center;
+}
+#navbartop{
+	background-color: #8e1616;
 }

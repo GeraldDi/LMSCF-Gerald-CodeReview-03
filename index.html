@@ -3,74 +3,90 @@
 <head>
 	<title>Code Review 3</title>
 	<link rel='stylesheet' type='text/css' href='styles.css'>
-	<link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body>
-	<header>
-		<img src="img/logo.png" alt="logo">
-		<img src="img/banner.png" alt="cf-banner">
-		
-		
-	</header>
-
-		<nav>		
-					<ul id="navbar">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="team.html">Team</a></li>
-					</ul>
-		</nav>
-
-		<div class=backg>
-			<p>Car insurance</p>
-			input-field 
+	<div id=#container>
+		<header>
+			<img src="img/logo.png" alt="logo">
+			<img src="img/banner.png" alt="cf-banner">
 			
-		</div>
-
-		<div id="grey">
-			<p>Un-complicated car coverage<br>
-			Understanding your coverageoptions shouldn't be so hard.<br>
-			We'll guide you through available coverage types,<br> starting with who and what is covered.</p>
-		</div>
-		<div id="leftbox">
-			<h2>What comes standard</h2>
-			<p>The coverage you need</p>
-			<p>Bodily Injury Liability
-			Property Damage
-			Medical Payments</p>
-
-			<p>Benefits
-			12-month rate guarantee| 24/7 customer <br>
-			service|Lifetime Repair Guarantee</p>
-		</div>
-		<div id="rightbox">
-			<h2>Add-on protection & coverage</h2>
-			<p>For more peace of mind</p>
-			<p>Better Car Replacement
-			Towing&Labor
-			Rental Car Coverage</p>
-			<p><b>Earned Benefits</b>
-			Accident Forgiveness| New Car ReplacementTM
-			</p>
-
-
 			
-		</div>
+		</header>
 
+			<nav id="navbartop">		
+						<ul class="navbar">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="team.html">Team</a></li>
+						</ul>
+			</nav>
 
+			<div class=backg>
+				<p>Car insurance</p>
+				<form>
+				  Your name:<br>
+				  <input type="text" name="ownername"><br>
+				  Age<br>
+				  <input type="text" name="age" id="age"><br>
+				  <select id="country">
+					  <option value="volvo">Austria</option>
+					  <option value="saab">Hungary</option>
+					  <option value="mercedes">Greece</option>
+				  </select><br>
+				  Horsepower of you car<br>
+				  <input type="text" name="horsepower" id="horsepower"><br>
+				  <input type="submit" value="Calculate" id="calcbutton"><br>
+				  	<input type="submit" value="löschenisttest" id="löschenisttest"><br>
+				</form>	
+				<!-- before i changed the form into a div i had the error the the result only showed up for a splitsecond and then disappeared  -->
+				<p id="resultfield">Result:</p>	
+				
+			</div>
 
-	<footer>
-		<nav>		
-			<ul id="navbar">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="team.html">Team</a></li>
-			</ul>
-		</nav>
-		<img src="img/logo-inv.png" alt="logo-inv">
-		<p>Gerald Dittrich Codefactory 2020</p>
-	</footer>
+			<div id="grey">
+				<p>Un-complicated car coverage<br>
+				Understanding your coverageoptions shouldn't be so hard.<br>
+				We'll guide you through available coverage types,<br> starting with who and what is covered.</p>
+			</div>
+			<div id="leftbox">
+				<h2>What comes standard</h2>
+				<p>The coverage you need</p>
+				<p>Bodily Injury Liability
+				Property Damage
+				Medical Payments</p>
+
+				<p>Benefits
+				12-month rate guarantee| 24/7 customer <br>
+				service|Lifetime Repair Guarantee</p>
+			</div>
+			<div id="rightbox">
+				<h2>Add-on protection & coverage</h2>
+				<p>For more peace of mind</p>
+				<p>Better Car Replacement
+				Towing&Labor
+				Rental Car Coverage</p>
+				<p><b>Earned Benefits</b>
+				Accident Forgiveness&#185| New Car Replacement&#8482
+				</p>
+		
+			</div>
+
+		<footer>
+			<nav id="navbarbottom">		
+				<ul class="navbar">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="team.html">Team</a></li>
+				</ul>
+			</nav>
+			<img src="img/logo-inv.png" alt="logo-inv">
+			<p>Gerald Dittrich Codefactory 2020</p>
+		</footer>
+
+	</div>
 
 	
 <script type="text/javascript" src ="script.js"></script>
+
+</script>
 
 </body>
 </html>
