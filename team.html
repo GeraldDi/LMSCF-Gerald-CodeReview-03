@@ -5,7 +5,6 @@
 	<link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body>
-	<div id=#container>
 			<header>
 				<img src="img/logo.png" alt="logo" id="headpic1">
 				<img src="img/banner.png" alt="cf-banner" id="headpic2">						
@@ -18,11 +17,13 @@
 				</nav>
 
 		<div id="teaminf">
-			<p id="person0"></p>
-			<p id="person1"></p>
-			<p id="person2"></p>
-			<p id="pictures"></p>
-			
+			<p  id="person0" class="click"></p>
+			<p id="extrabox0"></p>
+			<p  id="person1" class="click"></p>
+			<p id="extrabox1"></p>
+			<p  id="person2" class="click"></p>
+			<p id="extrabox2"></p>	
+						
 		</div>
 
 		<footer>
@@ -38,11 +39,11 @@
 
 	<script type="text/javascript"  src="data.json"></script>
 	<script>
-		 for (var i = 0; i < teamMembers.length; i++) {
+		 for (i = 0; i < teamMembers.length; i++) {
 
-       var obj = teamMembers[i];
+       obj = teamMembers[i];
        var pinfo=document.getElementById("person"+i);
-       pinfo.textContent="Name: "+obj.name+"  e-mail-adress: "+obj.email+ "  no real picture for copyright reasons";
+       pinfo.textContent+="Name: "+obj.name+"  e-mail-adress: "+obj.email+ "  no real picture for copyright reasons";
 
        var imgtest = new Image();
 				imgtest.src = obj.image;
@@ -50,6 +51,30 @@
 			    pici.appendChild(imgtest);
 
    }
+   var dom2 = document.getElementById("person0");
+	dom2.addEventListener("click", fromDomLevel2, false);
+	var elementNode = document.getElementById("extrabox0");
+
+	var dom21 = document.getElementById("person1");
+	dom21.addEventListener("click", fromDomLevel21, false);
+	var elementNode1 = document.getElementById("extrabox1");
+
+	var dom22 = document.getElementById("person2");
+	dom22.addEventListener("click", fromDomLevel22, false);
+	var elementNode2 = document.getElementById("extrabox2");
+
+	function fromDomLevel2() {
+  	elementNode.innerHTML += "Personal info: "+obj.pinfo;
+	};
+
+	function fromDomLevel21() {
+  	elementNode1.innerHTML += "Personal info: "+obj.pinfo;
+	};
+
+	function fromDomLevel22() {
+  	elementNode2.innerHTML += "Personal info: "+obj.pinfo;
+	};
+	//todo: crate one function that works for all the values
 	</script>
 
 </body>
