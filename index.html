@@ -7,75 +7,83 @@
 <body>
 	<div id=#container>
 		<header>
-			<img src="img/logo.png" alt="logo">
-			<img src="img/banner.png" alt="cf-banner">
+			<img src="img/logo.png" alt="logo" id="headpic1">
+			<img src="img/banner.png" alt="cf-banner" id="headpic2">
 						
 		</header>
 			<nav id="navbartop">		
 						<ul class="navbar">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="team.html">Team</a></li>
+							<li class="navbare"><a href="index.html" class="anav">Home</a></li>
+							<li class="navbare"><a href="team.html" class="anav">Team</a></li>
 						</ul>
 			</nav>
 
-			<div class=backg>
-				<p>Car insurance</p>
-				<div name="insuraninput">
-				  Your name:<br>
-				  <input type="text" name="ownername"><br>
-				  Age<br>
-				  <input type="text" name="age" id="age"><br>
-				  <select id="country">
-					  <option value="volvo">Austria</option>
-					  <option value="saab">Hungary</option>
-					  <option value="mercedes">Greece</option>
-				  </select><br>
-				  Horsepower of you car<br>
-				  <input type="text" name="horsepower" id="horsepower"><br>
-				  <input type="submit" value="Calculate" id="calcbutton"><br>
-				</div>	
-				<!-- before i changed the form into a div i had the error the the result only showed up for a splitsecond and then disappeared  -->
-				<p id="resultfield"></p>	
-		
+			<div id=backg>
+				<h2>Car insurance</h2>
+				<div id="inputbox">
+				<h3>Great coverage begins<br> 
+				with a custom quote</h3>							
+					<div id="insuranceinput">
+						<div id="topleft">					
+						  Your name:<br>
+						  <input type="text" name="ownername" class="ifield"><br>
+						  Age<br>
+						  <input type="text" name="age" id="age" class="ifield"><br>
+					  	</div>
+					  	<div id=topright>		  						  	
+							  <select id="country" name="country" class="ifield">
+								  <option value="volvo">Austria</option>
+								  <option value="saab">Hungary</option>
+								  <option value="mercedes">Greece</option>
+							  </select><br>
+							  Horsepower of you car<br>
+							  <input type="text" name="horsepower" id="horsepower" class="ifield"><br>							  
+						</div>							  
+					</div>	
+					<!-- before i changed the form into a div i had the error the the result only showed up for a splitsecond and then disappeared  -->
+					<input type="submit" value="Calculate" id="calcbutton" class="ifield"><br>
+					<p id="resultfield">Invisible text</p>	
+				</div>
 			</div>
 
 			<div id="grey">
-				<p>Un-complicated car coverage<br>
-				Understanding your coverageoptions shouldn't be so hard.<br>
+				<p class="bigtext">Un-complicated car coverage</p>
+				<p class="smalltext">Understanding your coverageoptions shouldn't be so hard.<br>
 				We'll guide you through available coverage types,<br> starting with who and what is covered.</p>
 			</div>
-			<div id="leftbox">
-				<h2>What comes standard</h2>
-				<p>The coverage you need</p>
-				<p>&#10004 Bodily Injury Liability
-				&#10004 Property Damage
-				&#10004 Medical Payments</p>
+			<div id="boxes">
+				<div id="leftbox">
+					<h4>What comes standard</h4>
+					<p>The coverage you need</p>
+					<p>&#10004 Bodily Injury Liability<br>
+					&#10004 Property Damage<br>
+					&#10004 Medical Payments</p>
 
-				<p>Benefits
-				12-month rate guarantee| 24/7 customer <br>
-				service|Lifetime Repair Guarantee</p>
+					<p><b>Benefits</b></p>
+					<p class="vsmalltext">12-month rate guarantee| 24/7 customer <br>
+					service|Lifetime Repair Guarantee</p>
+				</div>
+				<div id="rightbox">
+					<h4>Add-on protection & coverage</h4>
+					<p>For more peace of mind</p>
+					<p>&#10004 Better Car Replacement<br>
+					&#10004 Towing&Labor<br>
+					&#10004 Rental Car Coverage</p><br>
+					<p><b>Earned Benefits</b></p>
+					<p class="vsmalltext">Accident Forgiveness&#185| New Car<br> Replacement&#8482
+					</p>
+			
+				</div>
 			</div>
-			<div id="rightbox">
-				<h2>Add-on protection & coverage</h2>
-				<p>For more peace of mind</p>
-				<p>&#10004 Better Car Replacement
-				&#10004 Towing&Labor
-				&#10004 Rental Car Coverage</p>
-				<p><b>Earned Benefits</b>
-				Accident Forgiveness&#185| New Car Replacement&#8482
-				</p>
-		
-			</div>
-
 		<footer>
 			<nav id="navbarbottom">		
 				<ul class="navbar">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="team.html">Team</a></li>
+					<li class="navbare"><a href="index.html" class="anav">Home</a></li>
+					<li class="navbare"><a href="team.html" class="anav">Team</a></li>
 				</ul>
 			</nav>
-			<img src="img/logo-inv.png" alt="logo-inv">
-			<p>Gerald Dittrich Codefactory 2020</p>
+			<div id="bottompic"><img src="img/logo-inv.png" alt="logo-inv" ></div>
+			<p id="navname">Gerald Dittrich Codefactory 2020</p>
 		</footer>
 
 	</div>

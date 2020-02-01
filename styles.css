@@ -1,22 +1,128 @@
+body{
+	width: 50%;
+	margin: 0 auto;
+	font-family: "arial";
+}
 #container{
+	width: 80%;
+	margin: 0 auto;
+}
+#backg{
+	background-image: url("img/traffic.jpg");
 	
 }
-.backg{
-	background-image: url("img/traffic.jpg");
+#inputbox{
 	margin: 0 auto;
+	width: 80%;
+	opacity: 0.7;
+	background-color: white;
+	text-align: center;
+}
+#boxes{
+	display: flex;
+	justify-content: space-around;
 }
 footer{
 	background-color: black;
 	color: white;
 }
 header{
-	background-color:#fff3f3;
-	
+	background-color:#fff3f3;	
 }
 #grey{
-	background-color: grey;
+	background-color: lightgrey;
 	text-align: center;
 }
 #navbartop{
 	background-color: #8e1616;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding: 5px;
+    color: white;
+    font-size: 1.5em;   
+}
+#navname{
+	text-align: center;
+}
+#bottompic{
+	display: flex;
+	justify-content: center;
+	padding-left: 70%;
+
+}
+#leftbox,#rightbox{
+	border: 1px solid black;
+	border-top: 2px solid black;
+	margin: 3%;
+}
+h2{
+	color: white;
+	font-size: 2em;
+	
+}
+h3{
+	font-size: 2em;
+	text-align: center;
+}
+h4{
+	font-size: 1.1em;
+	color: darkblue;
+}
+.ifield{
+	background-color: white;
+}
+#insuranceinput{
+	display: flex;
+	justify-content: space-around;
+    
+}
+#resultfield{
+	visibility:hidden;
+	font-size: 2em;
+	color: green;
+}
+#headpic1{
+	padding: 3%;
+	padding-bottom: 4%;
+}
+#headpic2{
+	padding: 2%;
+	padding-left: 20%;
+}
+#calcbutton{
+	background-color: green;
+	color: white;
+	width: 7em;
+    height: 2em;
+    border: 4px;
+    border-radius: 6px;
+    font-size: 1.5em;
+}
+.navbar{
+	   display: flex;
+	   list-style-type: none;
+}
+.anav{
+	color: white;
+	padding-right: 15px;
+	text-decoration: none;
+}
+.bigtext{
+	font-size: 1.5em;
+}
+.smalltext{
+	font-size: 1.2em;
+}
+.vsmalltext{
+	font-size: 0.8em;
+	color: grey;
+}
+#leftbox{
+	padding-left: 5%;
+	padding-right: 11%;
+}
+#rightbox{
+	padding-left: 4%;
+	padding-right: 7%;
 }

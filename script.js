@@ -8,19 +8,21 @@ function calculateInsurance(){
 	var age=parseInt(ag);
 
 	if(country="Austria"){
-		insurance = horsepower*100/age+50;
+		insurance = "Insurance cost: " +horsepower*100/age+50;
 
 	}else if(country="Hungary"){
-		insurance =horsepower*120/age+100;
+		insurance ="Insurance cost: " +horsepower*120/age+100;
 
 	}else{
-		insurance =horsepower*150/(age+3)+50;
+		insurance ="Insurance cost: " +horsepower*150/(age+3)+50;
 
 	}
 	
 	console.log(insurance);
 	var endcalc = document.getElementById('resultfield');
 	endcalc.innerHTML = insurance;
+	endcalc.style.visibility="visible";
+
 }
 
 var elementNode = document.getElementById('calcbutton');
