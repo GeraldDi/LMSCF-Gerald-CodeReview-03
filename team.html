@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team</title>
+	<link rel='stylesheet' type='text/css' href='styles.css'>
+</head>
+<body>
+	<div id=#container>
+			<header>
+				<img src="img/logo.png" alt="logo" id="headpic1">
+				<img src="img/banner.png" alt="cf-banner" id="headpic2">						
+			</header>
+				<nav id="navbartop">		
+							<ul class="navbar">
+								<li class="navbare"><a href="index.html" class="anav">Home</a></li>
+								<li class="navbare"><a href="team.html" class="anav">Team</a></li>
+							</ul>
+				</nav>
+
+		<div id="teaminf">
+			<p id="person0"></p>
+			<p id="person1"></p>
+			<p id="person2"></p>
+			<p id="pictures"></p>
+			
+		</div>
+
+		<footer>
+			<nav id="navbarbottom">		
+				<ul class="navbar">
+					<li class="navbare"><a href="index.html" class="anav">Home</a></li>
+					<li class="navbare"><a href="team.html" class="anav">Team</a></li>
+				</ul>
+			</nav>
+			<div id="bottompic"><img src="img/logo-inv.png" alt="logo-inv" ></div>
+			<p id="navname">Gerald Dittrich Codefactory 2020</p>
+		</footer>
+
+	<script type="text/javascript"  src="data.json"></script>
+	<script>
+		 for (var i = 0; i < teamMembers.length; i++) {
+
+       var obj = teamMembers[i];
+       var pinfo=document.getElementById("person"+i);
+       pinfo.textContent="Name: "+obj.name+"  e-mail-adress: "+obj.email+ "  no real picture for copyright reasons";
+
+       var imgtest = new Image();
+				imgtest.src = obj.image;
+				var pici = document.getElementById("person"+i);
+			    pici.appendChild(imgtest);
+
+   }
+	</script>
+
+</body>
+</html>

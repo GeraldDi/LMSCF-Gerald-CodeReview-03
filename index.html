@@ -8,8 +8,7 @@
 	<div id=#container>
 		<header>
 			<img src="img/logo.png" alt="logo" id="headpic1">
-			<img src="img/banner.png" alt="cf-banner" id="headpic2">
-						
+			<img src="img/banner.png" alt="cf-banner" id="headpic2">						
 		</header>
 			<nav id="navbartop">		
 						<ul class="navbar">
@@ -17,35 +16,34 @@
 							<li class="navbare"><a href="team.html" class="anav">Team</a></li>
 						</ul>
 			</nav>
-
 			<div id=backg>
 				<h2>Car insurance</h2>
-				<div id="inputbox">
-				<h3>Great coverage begins<br> 
-				with a custom quote</h3>							
-					<div id="insuranceinput">
-						<div id="topleft">					
-						  Your name:<br>
-						  <input type="text" name="ownername" class="ifield"><br>
-						  Age<br>
-						  <input type="text" name="age" id="age" class="ifield"><br>
-					  	</div>
-					  	<div id=topright>		  						  	
-							  <select id="country" name="country" class="ifield">
-								  <option value="volvo">Austria</option>
-								  <option value="saab">Hungary</option>
-								  <option value="mercedes">Greece</option>
-							  </select><br>
-							  Horsepower of you car<br>
-							  <input type="text" name="horsepower" id="horsepower" class="ifield"><br>							  
-						</div>							  
-					</div>	
-					<!-- before i changed the form into a div i had the error the the result only showed up for a splitsecond and then disappeared  -->
-					<input type="submit" value="Calculate" id="calcbutton" class="ifield"><br>
-					<p id="resultfield">Invisible text</p>	
+				<div id="inputbox">					
+					<h3>Great coverage begins<br> 
+						with a custom quote</h3>							
+						<div id="insuranceinput">
+							<div id="topleft">					
+							  <div class="dummeyc">Your name:<br></div>
+							  <input type="text" name="ownername" class="ifield"><br><br>
+							  <div class="dummeyc">Country:</div>		  						  	
+								  <select id="country" name="country" class="ifield">
+									  <option value="Austria">Austria</option>
+									  <option value="Hungary">Hungary</option>
+									  <option value="Greece">Greece</option>
+								  </select><br><br>						  
+						  	</div>
+						  	<div id=topright>
+						  	<div class="dummeyc"> Age:<br></div>					  	
+							  <input type="text" name="age" id="age" class="ifield"><br>	  
+							<div class="dummeyc">  Horsepower of you car<br></div>
+								  <input type="text" name="horsepower" id="horsepower" class="ifield"><br>						  
+							</div>							  
+						</div>	
+						<!-- before i changed the form into a div i had the error the the result only showed up for a splitsecond and then disappeared  -->
+						<input type="submit" value="Calculate" id="calcbutton"><br><br>
+						<p id="resultfield">Invisible text</p><br><br>
 				</div>
 			</div>
-
 			<div id="grey">
 				<p class="bigtext">Un-complicated car coverage</p>
 				<p class="smalltext">Understanding your coverageoptions shouldn't be so hard.<br>
@@ -55,10 +53,9 @@
 				<div id="leftbox">
 					<h4>What comes standard</h4>
 					<p>The coverage you need</p>
-					<p>&#10004 Bodily Injury Liability<br>
-					&#10004 Property Damage<br>
-					&#10004 Medical Payments</p>
-
+					<p><b class="testx"> &#10004</b> Bodily Injury Liability<br>
+					<b class="testx"> &#10004</b> Property Damage<br>
+					<b class="testx"> &#10004</b> Medical Payments</p>
 					<p><b>Benefits</b></p>
 					<p class="vsmalltext">12-month rate guarantee| 24/7 customer <br>
 					service|Lifetime Repair Guarantee</p>
@@ -66,13 +63,11 @@
 				<div id="rightbox">
 					<h4>Add-on protection & coverage</h4>
 					<p>For more peace of mind</p>
-					<p>&#10004 Better Car Replacement<br>
-					&#10004 Towing&Labor<br>
-					&#10004 Rental Car Coverage</p><br>
+					<p><b class="testx"> &#10004</b> Better Car Replacement<br>
+					<b class="testx"> &#10004</b> Towing&Labor<br>
+					<b class="testx"> &#10004</b> Rental Car Coverage</p><br>
 					<p><b>Earned Benefits</b></p>
-					<p class="vsmalltext">Accident Forgiveness&#185| New Car<br> Replacement&#8482
-					</p>
-			
+					<p class="vsmalltext">Accident Forgiveness&#185| New Car<br> Replacement&#8482</p>								
 				</div>
 			</div>
 		<footer>
@@ -85,12 +80,7 @@
 			<div id="bottompic"><img src="img/logo-inv.png" alt="logo-inv" ></div>
 			<p id="navname">Gerald Dittrich Codefactory 2020</p>
 		</footer>
-
-	</div>
-	
+	</div>	
 <script type="text/javascript" src ="script.js"></script>
-
-</script>
-
 </body>
 </html>
